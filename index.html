@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="stylesheets/dictionary.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Manrope:wght@300;400&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,300;1,300&family=Roboto+Slab:wght@500&family=Roboto:wght@400;700&display=swap");
+    </style>
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Kumbh+Sans:wght@300&family=Manrope:wght@300;400&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,300;1,300&family=Open+Sans&family=Playfair+Display&family=Poppins&family=Raleway&family=Roboto+Slab:wght@500&family=Roboto:wght@400;700&display=swap');
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="dropdown-radio">
+        <input type="radio" id="serif" name="font" value="serif" checked/>
+        <label for="serif">Serif</label><br>
+        <input type="radio" id="sans-serif" name="font" value="sans-serif" />
+        <label for="sans-serif">Sans-Serif</label><br />
+        <input type="radio" id="monospace" name="font" value="monospace" />
+        <label for="monospace">Monospace</label>
+      </div>
+      <div class="navbar">
+        <img class="nav-images" src="images/book.png" />
+        <div id="tools">
+          <button style="font-weight: bold" id="font-toggle">
+            serif<img src="images/down-arrow.png" />
+          </button>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <img class="nav-images" src="images/night-mode.png" />
+        </div>
+      </div>
+      <br />
+      <div class="search-bar">
+        <input id="word_search" type="text" placeholder="Search" style = "font-weight: bolder;" />
+        <button id="search-btn"><img src="images/icon.png" /></button>
+      </div>
+      <div class="word-n-sound">
+        <div id="bold-word">
+          <h1></h1>
+          <p style = "color: rgb(235, 117, 235); margin-top: 15%;"></p>
+        </div>
+        <button id="audio-btn"><img src="images/play-button.png"></button>
+      </div>
+      <div class="description">
+        <p id="word-type"></p>
+        <p style="font-size: 1.2vw; margin-top: 6%;">Meaning</p>
+        <ul>
+          
+        </ul>
+      </div>
+    </div>
+
+    <script src="scripts/dictionary.js"></script>
+  </body>
+</html>
